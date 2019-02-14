@@ -1,0 +1,56 @@
+html,
+body,
+#container {
+  height: 100vh;  /* needed for proper layout */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 0 auto;
+  background-color: #dcdcdc;
+}
+ 
+#content {
+  flex: 1 1 auto;
+  position: relative;/* need this to position inner content */
+  overflow-y: auto;
+  display: flex;
+}
+
+footer {
+  flex: 0 0 auto;
+  background-color: #dcdcdc;
+}
+
+header, footer {
+  height: 4em;
+  background: #FF9800;
+}
+
+.hexController {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorMsg {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#errorMsgcont {
+  height: 40px;
+}
