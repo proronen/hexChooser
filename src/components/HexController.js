@@ -3,9 +3,6 @@ import React from 'react'
 export const HexForm = props => {
 
     const { errorMsg } = props;
-    console.log("errorMsg");
-    console.log(errorMsg);
-    console.log(props);
     const errorClass = errorMsg ? "errorMsg" : null;
     return (
     <div className="hexController" id="left">
@@ -28,7 +25,7 @@ export const HexColor = props => {
     return (
 
     <div className="hexController" id='right' style={{backgroundColor: `#${color}` }}>
-        #{color}
+        <p>#{color}</p>
     </div>
   )
 }

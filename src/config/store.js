@@ -2,8 +2,7 @@ import { createStore,combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 import hexReducer from '../reducers/hexReducer';
- console.log("hexReducer");
- console.log(hexReducer);
+
 const rootReducer = combineReducers({
     hexReducer
 });

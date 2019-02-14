@@ -7,8 +7,6 @@ const initialState = {
 
 const hexReducer = (state = initialState, action) => {
      
-        console.log("action.payload");
-        console.log(action);
     switch(action.type) {
         case actionTypes.CHANGE_HAX:
             return {

@@ -33,7 +33,7 @@ footer {
 }
 
 header, footer {
-  height: 4em;
+  height: 3em;
   background: #FF9800;
 }
 
@@ -43,6 +43,7 @@ header, footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  mix-blend-mode: difference;
 }
 
 .errorMsg {
@@ -53,4 +54,10 @@ header, footer {
 
 #errorMsgcont {
   height: 40px;
+}
+
+#hexInput {
+  border: solid 2px;
+  padding: 10px;
+  border-radius: 10px;
 }
